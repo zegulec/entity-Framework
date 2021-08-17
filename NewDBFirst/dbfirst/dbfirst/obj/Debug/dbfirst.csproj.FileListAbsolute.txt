@@ -1,0 +1,32 @@
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\bin\Debug\dbfirst.exe.config
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\bin\Debug\dbfirst.exe
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\bin\Debug\dbfirst.pdb
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\bin\Debug\EntityFramework.dll
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\bin\Debug\EntityFramework.xml
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.csprojResolveAssemblyReference.cache
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.acilis.resources
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.musteriislemleri.resources
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.Properties.Resources.resources
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.csproj.GenerateResource.Cache
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.exe
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.pdb
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.evislemleri.resources
+C:\Users\zegul\OneDrive\Masaüstü\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.satisislemleri.resources
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\bin\Debug\dbfirst.exe.config
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.exe
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.pdb
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\bin\Debug\dbfirst.exe
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\bin\Debug\dbfirst.pdb
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\bin\Debug\EntityFramework.dll
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\bin\Debug\EntityFramework.xml
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.csprojResolveAssemblyReference.cache
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.acilis.resources
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.evislemleri.resources
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.musteriislemleri.resources
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.Properties.Resources.resources
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.satisislemleri.resources
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewDBFirst\dbfirst\dbfirst\obj\Debug\dbfirst.csproj.GenerateResource.Cache

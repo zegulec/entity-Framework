@@ -1,0 +1,20 @@
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\bin\Debug\CodeFirst.exe.config
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\obj\Debug\CodeFirst.csprojResolveAssemblyReference.cache
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\obj\Debug\CodeFirst.acilis.resources
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\obj\Debug\CodeFirst.evislemleri.resources
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\obj\Debug\CodeFirst.Form1.resources
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\obj\Debug\CodeFirst.musteriislemleri.resources
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\obj\Debug\CodeFirst.Properties.Resources.resources
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\obj\Debug\CodeFirst.satisislemleri.resources
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\obj\Debug\CodeFirst.csproj.GenerateResource.Cache
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\bin\Debug\CodeFirst.exe
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\bin\Debug\CodeFirst.pdb
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\bin\Debug\EntityFramework.dll
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\bin\Debug\EntityFramework.xml
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\obj\Debug\CodeFirst.exe
+C:\Users\zegul\OneDrive\Masaüstü\yenicodefirst\CodeFirst\CodeFirst\obj\Debug\CodeFirst.pdb
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewCodeFirst\CodeFirst\CodeFirst\bin\Debug\CodeFirst.exe.config
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewCodeFirst\CodeFirst\CodeFirst\obj\Debug\CodeFirst.exe
+C:\Users\zegul\OneDrive\Masaüstü\Star Wars\entityFrameWorkProjelerim\NewCodeFirst\CodeFirst\CodeFirst\obj\Debug\CodeFirst.pdb

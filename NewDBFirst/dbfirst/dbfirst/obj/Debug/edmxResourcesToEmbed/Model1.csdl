@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbemlakModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ev">
+    <Key>
+      <PropertyRef Name="ev_id" />
+    </Key>
+    <Property Name="ev_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="adres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="isitma" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="banyosayisi" Type="Int32" />
+    <Property Name="fiyat" Type="Int32" />
+    <Property Name="kat" Type="Int32" />
+    <Property Name="odasayisi" Type="Int32" />
+    <Property Name="cephe" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="metrekare" Type="Int32" />
+    <Property Name="durum" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="satis" Relationship="Self.FK_satis_ev" FromRole="ev" ToRole="satis" />
+  </EntityType>
+  <EntityType Name="musteri">
+    <Key>
+      <PropertyRef Name="tckimlik" />
+    </Key>
+    <Property Name="tckimlik" Type="String" MaxLength="11" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="ad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="telefon" Type="String" MaxLength="11" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="yas" Type="Int32" />
+    <NavigationProperty Name="satis" Relationship="Self.FK_satis_musteri" FromRole="musteri" ToRole="satis" />
+  </EntityType>
+  <EntityType Name="satis">
+    <Key>
+      <PropertyRef Name="satis_id" />
+    </Key>
+    <Property Name="satis_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ev_id" Type="Int32" />
+    <Property Name="tc_kimlik" Type="String" MaxLength="11" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="ev" Relationship="Self.FK_satis_ev" FromRole="satis" ToRole="ev" />
+    <NavigationProperty Name="musteri" Relationship="Self.FK_satis_musteri" FromRole="satis" ToRole="musteri" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_satis_ev">
+    <End Role="ev" Type="Self.ev" Multiplicity="0..1" />
+    <End Role="satis" Type="Self.satis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ev">
+        <PropertyRef Name="ev_id" />
+      </Principal>
+      <Dependent Role="satis">
+        <PropertyRef Name="ev_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_satis_musteri">
+    <End Role="musteri" Type="Self.musteri" Multiplicity="0..1" />
+    <End Role="satis" Type="Self.satis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="musteri">
+        <PropertyRef Name="tckimlik" />
+      </Principal>
+      <Dependent Role="satis">
+        <PropertyRef Name="tc_kimlik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbemlakEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ev" EntityType="Self.ev" />
+    <EntitySet Name="musteri" EntityType="Self.musteri" />
+    <EntitySet Name="satis" EntityType="Self.satis" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <AssociationSet Name="FK_satis_ev" Association="Self.FK_satis_ev">
+      <End Role="ev" EntitySet="ev" />
+      <End Role="satis" EntitySet="satis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_satis_musteri" Association="Self.FK_satis_musteri">
+      <End Role="musteri" EntitySet="musteri" />
+      <End Role="satis" EntitySet="satis" />
+    </AssociationSet>
+    <FunctionImport Name="satilanlar" ReturnType="Collection(dbemlakModel.satilanlar_Result)" />
+    <FunctionImport Name="satilmayan_evler" ReturnType="Collection(dbemlakModel.satilmayan_evler_Result)" />
+    <FunctionImport Name="satislistesi" ReturnType="Collection(dbemlakModel.satislistesi_Result)" />
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(dbemlakModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(dbemlakModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="satilanlar_Result">
+    <Property Type="Int32" Name="satis_id" Nullable="false" />
+    <Property Type="String" Name="Ad_Soyad" Nullable="true" MaxLength="101" />
+    <Property Type="String" Name="tc_kimlik" Nullable="true" MaxLength="11" />
+    <Property Type="Int32" Name="ev_id" Nullable="false" />
+    <Property Type="String" Name="Ev_Adres" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Fiyat" Nullable="true" />
+    <Property Type="String" Name="Isıtma" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Oda_Sayısı" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="satilmayan_evler_Result">
+    <Property Type="Int32" Name="ev_id" Nullable="false" />
+    <Property Type="String" Name="adres" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="isitma" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="banyosayisi" Nullable="true" />
+    <Property Type="Int32" Name="fiyat" Nullable="true" />
+    <Property Type="Int32" Name="kat" Nullable="true" />
+    <Property Type="Int32" Name="odasayisi" Nullable="true" />
+    <Property Type="String" Name="cephe" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="metrekare" Nullable="true" />
+    <Property Type="String" Name="durum" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="satislistesi_Result">
+    <Property Type="Int32" Name="satis_id" Nullable="false" />
+    <Property Type="String" Name="Ad_Soyad" Nullable="true" MaxLength="101" />
+    <Property Type="String" Name="tc_kimlik" Nullable="true" MaxLength="11" />
+    <Property Type="Int32" Name="ev_id" Nullable="false" />
+    <Property Type="String" Name="Ev_Adres" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Fiyat" Nullable="true" />
+    <Property Type="String" Name="Isıtma" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Oda_Sayısı" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>
